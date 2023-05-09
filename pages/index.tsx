@@ -35,13 +35,11 @@ const Home: NextPage = () => {
     bio +
     `\n. Your response must be formatted using HTML Elements for easier readability, including paragraph tags, line breaks, headings and bold titles where applicable, no need to create Full HTML Page including head, title elements. Escriba el contenido anterior con los temas siguientes.    
     1. Actividad temprana.
-    Proporcione ejemplos de actividades de juego motivadoras, como una canción de atención, un poco de baile o un juego corto.
+    Proporcione algunos títulos de canciones o un pequeño título de baile o un método de juego corto para aprender el tema y llamar la atención.
     2. Requisitos previos
+    Proporcione los requisitos previos detallados para aprender el tema.
     3. Tema y Meta
     4. Desarrollo del tema
-    - Agilidad e ingenio.
-    - operación intelectual
-    - inteligencia emocional
     5. Reconecta la actividad
     Esto permite a los estudiantes reconectar su atención al tiempo de clase y prepararlos emocionalmente para el desarrollo de las actividades planificadas.
     6. Actividades de clase
@@ -49,6 +47,10 @@ const Home: NextPage = () => {
     7. Evaluación
     Proporcione algunas preguntas de muestra.
     `;
+  /*4. Desarrollo del tema
+    - Agilidad e ingenio.
+    - operación intelectual
+    - inteligencia emocional*/
 
   const generateBio = async (e: any) => {
     e.preventDefault();
