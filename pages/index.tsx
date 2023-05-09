@@ -41,10 +41,6 @@ const Home: NextPage = () => {
     anécdota, chiste, etc. 
 
     2. Requisitos previos 
-    Es la base sobre la que se estructuran los nuevos conocimientos. Se debe hacer la verificación
-    o revisión de requisitos previos antes de enseñar el nuevo tema. Los enlaces del cerebro humano
-    experiencia previa con los nuevos conocimientos. La comprensión se produce cuando el
-    el cerebro encuentra apoyo en el conocimiento y las percepciones previas existentes.
 
     3. Tema y objetivos de la
     - Deben darse con claridad y precisión.
@@ -53,11 +49,6 @@ const Home: NextPage = () => {
     - ¿Qué podrán hacer/saber mis alumnos?
 
     4. Desarrollo del tema
-    - Se deben aplicar los principios de la neurociencia
-    - Uso de datos mentales
-    - Agilidad e ingenio
-    - Operaciones Intelectuales
-    - Inteligencia emocional
 
     5. Actividad de reconexión
     Permite a los estudiantes reconectar su atención en clase y los prepara emocionalmente
@@ -70,8 +61,8 @@ const Home: NextPage = () => {
     recomienda para ello, el uso de plataformas educativas.
 
     7. Evaluación
-    Los conocimientos deben ser evaluados para conocer el nivel de apropiación de los
-    ellos mismos. La evaluación debe verificar el cumplimiento de los objetivos.`;
+    Por favor, dé algunas preguntas de ejemplo.
+    `;
 
   const generateBio = async (e: any) => {
     e.preventDefault();
