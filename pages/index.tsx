@@ -34,34 +34,20 @@ const Home: NextPage = () => {
     " el tema es " +
     bio +
     `\n. Your response must be formatted using HTML Elements for easier readability, including paragraph tags, line breaks, headings and bold titles where applicable, no need to create Full HTML Page including head, title elements. Escriba el contenido anterior con los temas siguientes.    
-    1. Actividad inicial.  
-    Las clases comienzan con una actividad lúdica motivadora, dirigida a centrar la atención,
-    predisposición, buen ánimo y comportamiento de los alumnos. Esta actividad debe ser
-    corto y colectivo Por ejemplo: una canción, un pequeño baile, dinámica, un juego corto,
-    anécdota, chiste, etc. 
-
-    2. Requisitos previos 
-
-    3. Tema y objetivos de la
-    - Deben darse con claridad y precisión.
-    - Los alumnos y el profesor deben tener claro el objetivo que se persigue en la clase.
-    - ¿Qué voy a aprender/enseñar?
-    - ¿Qué podrán hacer/saber mis alumnos?
-
+    1. Actividad temprana.
+    Proporcione ejemplos de actividades de juego motivadoras, como una canción de atención, un poco de baile o un juego corto.
+    2. Requisitos previos
+    3. Tema y Meta
     4. Desarrollo del tema
-
-    5. Actividad de reconexión
-    Permite a los estudiantes reconectar su atención en clase y los prepara emocionalmente
-    para el desarrollo de las actividades previstas.
-
-    6. Actividad de clase
-    Las actividades deben estar preparadas y diseñadas para reforzar los nuevos conocimientos.
-    aprendió. Pueden desarrollarse de forma individual o colectiva; promoviendo la
-    desarrollo de habilidades de pensamiento, deben ser productivas y significativas. ÉL
-    recomienda para ello, el uso de plataformas educativas.
-
+    - Agilidad e ingenio.
+    - operación intelectual
+    - inteligencia emocional
+    5. Reconecta la actividad
+    Esto permite a los estudiantes reconectar su atención al tiempo de clase y prepararlos emocionalmente para el desarrollo de las actividades planificadas.
+    6. Actividades de clase
+    Las actividades deben estar preparadas y diseñadas para reforzar los nuevos conocimientos aprendidos. Se pueden desarrollar de forma individual o colectiva. Tiene que ser productiva y significativa para promover el desarrollo de habilidades de pensamiento. Recomendamos usar una plataforma educativa para esto.
     7. Evaluación
-    Por favor, dé algunas preguntas de ejemplo.
+    Proporcione algunas preguntas de muestra.
     `;
 
   const generateBio = async (e: any) => {
