@@ -47,10 +47,6 @@ const Home: NextPage = () => {
     7. Evaluación
     Proporcione algunas preguntas de muestra.
     `;
-  /*4. Desarrollo del tema
-    - Agilidad e ingenio.
-    - operación intelectual
-    - inteligencia emocional*/
 
   const generateBio = async (e: any) => {
     e.preventDefault();
