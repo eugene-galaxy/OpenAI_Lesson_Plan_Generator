@@ -12,7 +12,7 @@ const FixRequiredSelect = (props: any) => {
   const { isDisabled } = props; // isDisabled from props
   const enableRequired = !isDisabled;
   let selectRef = useRef<HTMLInputElement>(null); // select component ref
-  const onChange = (value, actionMeta) => {
+  const onChange = (value: any, actionMeta: any) => {
     if (props.index === undefined) {
       setPlace(value);
     } else {
