@@ -6,7 +6,7 @@ const noop = () => {
   // no operation (do nothing real quick)
 };
 
-const FixRequiredSelect = (props) => {
+const FixRequiredSelect = (props: any) => {
   const { place, setPlace } = props; // place from props
   const { SelectComponent, required } = props; // SelectComponent from props
   const { isDisabled } = props; // isDisabled from props
