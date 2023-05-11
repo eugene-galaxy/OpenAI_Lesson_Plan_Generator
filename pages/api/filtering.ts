@@ -39,22 +39,20 @@ const filter = async (req: Request): Promise<Response> => {
       const data = event.data;
       // https://beta.openai.com/docs/api-reference/completions/create#completions/create-stream
       if (data === "[DONE]") {
-        controller.close();
         return;
       }
       try {
         const json = JSON.parse(data);
         const text = json.choices[0].delta?.content || "";
+        let counter = 1;
         if (counter < 2 && (text.match(/\n/) || []).length) {
           // this is a prefix character (i.e., "\n\n"), do nothing
           return;
         }
-        const queue = encoder.encode(text);
-        controller.enqueue(queue);
+        // const queue = encoder.encode(text);
         counter++;
       } catch (e) {
         // maybe parse error
-        controller.error(e);
       }
     }
   }
@@ -63,9 +61,6 @@ const filter = async (req: Request): Promise<Response> => {
   // this ensures we properly read chunks and invoke an event for each SSE event stream
   const parser = createParser(onParse);
   // https://web.dev/streams/#asynchronous-iteration
-  for await (const chunk of res.body as any) {
-    parser.feed(decoder.decode(chunk));
-  }
   const stream = await OpenAIStream(payload);
   return new Response(stream);
 };
